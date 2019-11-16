@@ -2,21 +2,22 @@
   (:require [clojure.string :as s])
   (:gen-class))
 
-(+ 1 2 3)
 
-(defn square [x]
-  (* x x))
+(defn fizzbuzz 
+  "The traditional fizz-buzz example problem"
+  [n]
 
-(s/trim "abc  ")
+  (print (str n " - "))
+  (when (> n 0) 
+    (if (mod n 5) "fizz")
+    (if (mod n 3) "buzz")
+    (println)
+    (fizzbuzz (- n 1))))
 
-(square 2)
-
-(defmacro silly []
-  '(let [a# (count [1 2 3])]
-     (* 2 a#)))
-(silly)
+(fizzbuzz 16)
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (fizzbuzz 3))
+
