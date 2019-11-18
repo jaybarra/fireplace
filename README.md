@@ -1,5 +1,5 @@
 # fireplace
-![Build Status](https://github.com/jaybarra/fizzbuzz-clojure/workflows/Clojure%20CI/badge.svg]
+![Build Status](https://github.com/jaybarra/fizzbuzz-clojure/workflows/Clojure%20CI/badge.svg)
 
 Mixture of experimenting with vim-fireplace, leiningen, and clojure
 
