@@ -1,36 +1,26 @@
 # fireplace
 
-FIXME: description
+Mixture of experimenting with vim-fireplace, leiningen, and clojure
 
 ## Installation
 
-Download from http://example.com/FIXME.
+```bash
+lein uberjar
+```
 
 ## Usage
 
-FIXME: explanation
+Build the standalone jar with `lein uberjar`
 
     $ java -jar fireplace-0.1.0-standalone.jar [args]
 
 ## Options
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+* None yet
 
 ## License
 
-Copyright © 2019 FIXME
+Copyright © 2019 Draconic Systems
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
