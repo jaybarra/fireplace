@@ -12,7 +12,8 @@
 (defn fizzbuzz 
   "The traditional fizz-buzz example problem"
   [n]
-  (calc_zz n 3 (str (calc_zz n 5 "fizz") "buzz")))
+  (str (calc_zz n 5 "fizz") (calc_zz n 3 "buzz"))
+)
 
 
 (defn -main
