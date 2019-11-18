@@ -15,9 +15,12 @@
   (str (calc_zz n 5 "fizz") (calc_zz n 3 "buzz"))
 )
 
-
 (defn -main
   "FizzBuzz runner"
   [& args]
-  (fizzbuzz 15))
+  
+  (loop [x 1]
+    (when (< x 99)
+      (println (str x " " (fizzbuzz x)))
+      (recur (+ x 1)))))
 
