@@ -4,4 +4,4 @@
 
 (deftest a-test
   (testing "15 should be fizzbuzz"
-    (is (fizzbuzz 15 "fizzbuzz"))))
+    (is (fizzbuzz 15) "fizzbuzz")))
