@@ -18,4 +18,5 @@
 (defn -main
   "FizzBuzz runner"
   [& args]
-  
+  (fizzbuzz 15) 
+
