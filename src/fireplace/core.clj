@@ -20,8 +20,6 @@
   [n]
 
   (let [output n] (s/trim (str output " " (calc_zz n 5 "fizz") (calc_zz n 3 "buzz"))))
-
-  ;(str (calc_zz n 5 "fizz") (calc_zz n 3 "buzz")) 
 )
 
 
@@ -29,7 +27,7 @@
   "FizzBuzz runner"
   [& args]
 
-  (map #(println (fizzbuzz %)) (range 1 20))
+  (let [to (nth args 0)]
+    (map #(println (fizzbuzz %)) (range 1 to)))
 )
-
 
