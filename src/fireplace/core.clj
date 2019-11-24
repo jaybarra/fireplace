@@ -27,7 +27,7 @@
   "FizzBuzz runner"
   [& args]
 
-  (let [to (nth args 0)]
+  (let [to (+ 1 (nth args 0))]
     (map #(println (fizzbuzz %)) (range 1 to)))
 )
 
