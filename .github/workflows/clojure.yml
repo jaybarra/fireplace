@@ -13,3 +13,13 @@ jobs:
       run: lein deps
     - name: Run tests
       run: lein test
+
+    - name: Notify
+      uses: rtCamp/action-slack-notify@master
+      env:
+        SLACK_CHANNEL: builds
+        SLACK_MESSAGE: 'Build Completed :rocket:'
+        SLACK_TITLE: 'Github Action Run'
+        SLACK_USERNAME: 'Build Bot'
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
