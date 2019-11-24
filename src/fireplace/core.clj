@@ -19,7 +19,7 @@
   "The traditional fizz-buzz example problem"
   [n]
 
-  (let [output n] (str output " " (calc_zz n 5 "fizz") (calc_zz n 3 "buzz")))
+  (let [output n] (s/trim (str output " " (calc_zz n 5 "fizz") (calc_zz n 3 "buzz"))))
 
   ;(str (calc_zz n 5 "fizz") (calc_zz n 3 "buzz")) 
 )
