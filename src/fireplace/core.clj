@@ -2,6 +2,12 @@
   (:require [clojure.string :as s])
   (:gen-class))
 
+(defn random_int_in_range
+  [from to]
+  (+ (rand-int (- to from)) from)
+)
+
+(random_int_in_range 1 10)
 
 (defn calc_zz
   "Helper for fizz-buzz"
@@ -12,15 +18,18 @@
 (defn fizzbuzz 
   "The traditional fizz-buzz example problem"
   [n]
-  (str (calc_zz n 5 "fizz") (calc_zz n 3 "buzz"))
+
+  (let [output n] (str output " " (calc_zz n 5 "fizz") (calc_zz n 3 "buzz")))
+
+  ;(str (calc_zz n 5 "fizz") (calc_zz n 3 "buzz")) 
 )
+
 
 (defn -main
   "FizzBuzz runner"
   [& args]
-  
-  (loop [x 1]
-    (when (< x 99)
-      (println (str x " " (fizzbuzz x)))
-      (recur (+ x 1)))))
+
+  (map #(println (fizzbuzz %)) (range 1 20))
+)
+
 
